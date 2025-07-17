@@ -36,19 +36,29 @@ namespace assignment_4
             #region q3
             //Write a program that takes 3 integers from the user then 
             //prints the max element and the min element.
-            int max = int.MinValue;
-            int min = int.MaxValue;
-            for (int i = 1; i <= 3; i++)
-            {
-                Console.WriteLine("enter number " + i);
-                int number = int.Parse(Console.ReadLine());
-                if ( number > max)
-                    max = number;
-                if (number < min)
-                    min = number;
-            }
-            Console.WriteLine($"the max is {max}");
-            Console.WriteLine($"the max is {min}");
+            //int max = int.MinValue;
+            //int min = int.MaxValue;
+            //for (int i = 1; i <= 3; i++)
+            //{
+            //    Console.WriteLine("enter number " + i);
+            //    int number = int.Parse(Console.ReadLine());
+            //    if ( number > max)
+            //        max = number;
+            //    if (number < min)
+            //        min = number;
+            //}
+            //Console.WriteLine($"the max is {max}");
+            //Console.WriteLine($"the max is {min}");
+            #endregion
+            #region q4 
+            //Write a program that takes 3 integers from the user 
+            //then prints the max element and the min element.
+            Console.WriteLine("enter a number :");
+            double number = double.Parse(Console.ReadLine());
+            if(number%2==0)
+                Console.WriteLine($"number {number} is even");
+            else
+                Console.WriteLine($"number {number} is odd");
             #endregion
         }
     }
