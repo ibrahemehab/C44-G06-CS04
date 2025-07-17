@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using System.Reflection.Metadata;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment_4
@@ -51,14 +52,28 @@ namespace assignment_4
             //Console.WriteLine($"the max is {min}");
             #endregion
             #region q4 
-            //Write a program that takes 3 integers from the user 
+            //Write a program that takes 3 integers from the user
             //then prints the max element and the min element.
-            Console.WriteLine("enter a number :");
-            double number = double.Parse(Console.ReadLine());
-            if(number%2==0)
-                Console.WriteLine($"number {number} is even");
+            //Console.WriteLine("enter a number :");
+            //double number = double.Parse(Console.ReadLine());
+            //if (number % 2 == 0)
+            //    Console.WriteLine($"number {number} is even");
+            //else
+            //    Console.WriteLine($"number {number} is odd");
+            #region q5 
+            //Write a program that takes character from the user then if it is a vowel
+            //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
+            Console.WriteLine("enter a character :");
+            bool iscaracter = char.TryParse(Console.ReadLine(), out char character);
+            char ch = char.ToLower(character);
+            if (iscaracter == false)
+                Console.WriteLine("please enter an caracter");
+             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                Console.WriteLine("vowel");
             else
-                Console.WriteLine($"number {number} is odd");
+                Console.WriteLine("constant");
+
+            #endregion
             #endregion
         }
     }
