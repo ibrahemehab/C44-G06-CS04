@@ -103,13 +103,27 @@ namespace assignment_4
             #region q8
             //Write a program that allows to user to insert number 
             //then print all even numbers between 1 to this number
-            Console.WriteLine("enter a number ");
+            //Console.WriteLine("enter a number ");
+            //int number = int.Parse(Console.ReadLine());
+            //for (int i = 2; i < number; ++i)
+            //{
+            //    Console.WriteLine(i);
+            //    ++i;
+            //}
+            #endregion
+            #region q9 
+            //Write a program that takes two integers then prints the power.
+            Console.WriteLine("enter the number ");
             int number = int.Parse(Console.ReadLine());
-            for (int i = 2; i < number; ++i)
+            Console.WriteLine("enter the power ");
+            int power = int.Parse(Console.ReadLine());
+            int powercalc = 1 ;
+            for (int i = 1; i <= power; i++)
             {
-                Console.WriteLine(i);
-                ++i;
+                 powercalc *= number ;
             }
+            Console.WriteLine(powercalc);
+
             #endregion
         }
     }
