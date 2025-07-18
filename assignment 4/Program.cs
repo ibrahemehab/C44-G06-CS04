@@ -124,6 +124,7 @@ namespace assignment_4
             }
             Console.WriteLine(powercalc);
 
+
             #endregion
         }
     }
