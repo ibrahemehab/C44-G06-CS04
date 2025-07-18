@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata;
+﻿using System.Numerics;
+using System.Reflection.Metadata;
 using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -64,18 +65,28 @@ namespace assignment_4
             #region q5 
             //Write a program that takes character from the user then if it is a vowel
             //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
-            Console.WriteLine("enter a character :");
-            char character = char.Parse(Console.ReadLine());
-            char ch = char.ToLower(character);
-            if (char.IsLetter(character) == false)
-                Console.WriteLine("please enter an caracter");
-            else if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-                Console.WriteLine("vowel");
-            else
-                Console.WriteLine("constant");
+            //Console.WriteLine("enter a character :");
+            //char character = char.Parse(Console.ReadLine());
+            //char ch = char.ToLower(character);
+            //if (char.IsLetter(character) == false)
+            //    Console.WriteLine("please enter an caracter");
+            //else if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //    Console.WriteLine("vowel");
+            //else
+            //    Console.WriteLine("constant");
 
             #endregion
+            #region q6
+            //Write a program that allows the user to insert an integer then print all
+            //numbers between 1 to that number.
+            Console.WriteLine("enter a number :");
+            int number2 = int.Parse(Console.ReadLine());
+            if (number2 < 1)
+                Console.WriteLine("please enter positive number");
+            for (int i = 1; i <= number2; i++)
+                Console.WriteLine(i);
 
+            #endregion
         }
     }
 }
