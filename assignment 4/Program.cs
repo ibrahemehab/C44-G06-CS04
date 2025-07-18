@@ -90,15 +90,26 @@ namespace assignment_4
             #region q7
             //Write a program that allows the user to insert an integer then
             //print a multiplication table up to 12.
+            //Console.WriteLine("enter a number ");
+            //int number = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    int result = 0;
+            //    result = number * i;
+            //    Console.WriteLine(result);
+            //}
+
+            #endregion
+            #region q8
+            //Write a program that allows to user to insert number 
+            //then print all even numbers between 1 to this number
             Console.WriteLine("enter a number ");
             int number = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= 12; i++)
+            for (int i = 2; i < number; ++i)
             {
-                int result = 0;
-                result = number * i;
-                Console.WriteLine(result);
+                Console.WriteLine(i);
+                ++i;
             }
-
             #endregion
         }
     }
