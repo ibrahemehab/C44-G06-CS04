@@ -64,11 +64,11 @@ namespace assignment_4
             //Write a program that takes character from the user then if it is a vowel
             //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
             Console.WriteLine("enter a character :");
-            bool iscaracter = char.TryParse(Console.ReadLine(), out char character);
+            char character = char.Parse(Console.ReadLine());
             char ch = char.ToLower(character);
-            if (iscaracter == false)
+            if (char.IsLetter(character) == false)
                 Console.WriteLine("please enter an caracter");
-             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            else if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
                 Console.WriteLine("vowel");
             else
                 Console.WriteLine("constant");
