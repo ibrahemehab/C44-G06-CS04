@@ -60,6 +60,7 @@ namespace assignment_4
             //    Console.WriteLine($"number {number} is even");
             //else
             //    Console.WriteLine($"number {number} is odd");
+            #endregion
             #region q5 
             //Write a program that takes character from the user then if it is a vowel
             //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
@@ -74,7 +75,7 @@ namespace assignment_4
                 Console.WriteLine("constant");
 
             #endregion
-            #endregion
+
         }
     }
 }
