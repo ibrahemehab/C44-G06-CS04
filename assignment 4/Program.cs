@@ -183,14 +183,32 @@ namespace assignment_4
             #region q13
             //Write a program to allow the user to enter a string and print the REVERSE
             //of it.
-            Console.WriteLine("enter the string");
-            string message = Console.ReadLine();
-            string message3 = "";
-            for (int i = (message.Length - 1); i >= 0; i--)
+            //Console.WriteLine("enter the string");
+            //string message = Console.ReadLine();
+            //string message3 = "";
+            //for (int i = (message.Length - 1); i >= 0; i--)
+            //{
+            //    message3 += message.Substring(i , 1);
+            //}
+            //Console.WriteLine(message3);
+            #endregion
+            #region q14
+            //Write a program to allow the user to enter int and print the REVERSED of
+            //it.
+            Console.WriteLine("enter the number");
+            int number = int.Parse(Console.ReadLine());
+            int result = 0;
+           
+           while ( number > 0)
             {
-                message3 += message.Substring(i , 1);
+                result += (number % 10);
+                result *= 10;
+                number /= 10;
             }
-            Console.WriteLine(message3);
+            Console.WriteLine(result/10);
+
+
+
             #endregion
 
 
