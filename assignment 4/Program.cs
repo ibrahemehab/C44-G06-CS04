@@ -130,22 +130,34 @@ namespace assignment_4
             #region q10
             //Write a program to enter marks of five subjects and calculate 
             //total,average and percentage.
-            int sum = 0;
-            int count = 0;
-            int total = 0;
-            for (int i = 1; i <= 5; i++)
-            {
-                Console.WriteLine($"enter number{i} ");
-                int number = int.Parse(Console.ReadLine());
-                sum += number;
-                count++;
-                total += 100;
-            }
-            int average = sum / count;
-            double percentage = ((double)sum / total) * 100;
-            Console.WriteLine($"sum is {sum} ");
-            Console.WriteLine($"average is {average} ");
-            Console.WriteLine($"percentage is {percentage} ");
+            //int sum = 0;
+            //int count = 0;
+            //int total = 0;
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    Console.WriteLine($"enter number{i} ");
+            //    int number = int.Parse(Console.ReadLine());
+            //    sum += number;
+            //    count++;
+            //    total += 100;
+            //}
+            //int average = sum / count;
+            //double percentage = ((double)sum / total) * 100;
+            //Console.WriteLine($"sum is {sum} ");
+            //Console.WriteLine($"average is {average} ");
+            //Console.WriteLine($"percentage is {percentage} ");
+            #region q11
+            //Write a program to input the month number and print the number of days in
+            //that month.
+            Console.WriteLine("enter the month number");
+            int month = int.Parse(Console.ReadLine());
+            if (month == 4 || month == 6 || month == 9 || month == 11)
+                Console.WriteLine($"the number of days in month{month}  is 30 day");
+            else if (month == 2 )
+                Console.WriteLine($"the number of days in month{month}  is 29 day");
+            else
+                Console.WriteLine($"the number of days in month{month}  is 31 day");
+            #endregion
             #endregion
 
 
