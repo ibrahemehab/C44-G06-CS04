@@ -151,15 +151,34 @@ namespace assignment_4
             #region q11
             //Write a program to input the month number and print the number of days in
             //that month.
-            Console.WriteLine("enter the month number");
-            int month = int.Parse(Console.ReadLine());
-            if (month == 4 || month == 6 || month == 9 || month == 11)
-                Console.WriteLine($"the number of days in month{month}  is 30 day");
-            else if (month == 2)
-                Console.WriteLine($"the number of days in month{month}  is 29 day");
-            else
-                Console.WriteLine($"the number of days in month{month}  is 31 day");
+            //Console.WriteLine("enter the month number");
+            //int month = int.Parse(Console.ReadLine());
+            //if (month == 4 || month == 6 || month == 9 || month == 11)
+            //    Console.WriteLine($"the number of days in month{month}  is 30 day");
+            //else if (month == 2)
+            //    Console.WriteLine($"the number of days in month{month}  is 29 day");
+            //else
+            //    Console.WriteLine($"the number of days in month{month}  is 31 day");
 
+            #endregion
+            #region q12
+            //Write a program to create a Simple Calculator.
+            Console.WriteLine("enter the first number :");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the second number :");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the operator :");
+            string operators = Console.ReadLine();
+            if (operators == "+")
+                Console.WriteLine("the sum is :" + (num1 + num2) );
+            else if (operators == "-")
+                Console.WriteLine("the substract is :" + (num1 - num2));
+            else if (operators == "*")
+                Console.WriteLine("the multiple is :" + (num1 * num2));
+            else if (operators == "/")
+                Console.WriteLine("the divison is :" + (num1 / num2));
+            else
+                Console.WriteLine($"in valid operator{operators}");
             #endregion
 
 
