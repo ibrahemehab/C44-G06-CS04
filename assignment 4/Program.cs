@@ -146,6 +146,8 @@ namespace assignment_4
             //Console.WriteLine($"sum is {sum} ");
             //Console.WriteLine($"average is {average} ");
             //Console.WriteLine($"percentage is {percentage} ");
+
+            #endregion
             #region q11
             //Write a program to input the month number and print the number of days in
             //that month.
@@ -153,11 +155,11 @@ namespace assignment_4
             int month = int.Parse(Console.ReadLine());
             if (month == 4 || month == 6 || month == 9 || month == 11)
                 Console.WriteLine($"the number of days in month{month}  is 30 day");
-            else if (month == 2 )
+            else if (month == 2)
                 Console.WriteLine($"the number of days in month{month}  is 29 day");
             else
                 Console.WriteLine($"the number of days in month{month}  is 31 day");
-            #endregion
+
             #endregion
 
 
