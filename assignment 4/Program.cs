@@ -3,6 +3,7 @@ using System.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Reflection.Metadata;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -244,16 +245,42 @@ namespace assignment_4
             //y2), and(x3, y3), and determines whether these points lie on a single
             //straight line.
 
-            for (int i = 0; i <3; i++)
-            {
-                Console.WriteLine("enter the two points : ");
-                int x = int.Parse(Console.ReadLine());
-                int y = int.Parse(Console.ReadLine());
+            //for (int i = 0; i <3; i++)
+            //{
+            //    Console.WriteLine("enter the two points : ");
+            //    int x = int.Parse(Console.ReadLine());
+            //    int y = int.Parse(Console.ReadLine());
 
-                //cannot solve it 
+            //    //cannot solve it 
 
 
-            }
+            //}
+            #endregion
+            #region q17
+            //Within a company, the efficiency of workers is evaluated based on the
+            //            duration required to complete a specific task.A worker's efficiency level is
+            //determined as follows:
+            //-If the worker completes the job within 2 to 3 hours, they are considered
+            //highly efficient.
+            //- If the worker takes 3 to 4 hours, they are instructed to increase their
+            //speed.
+            //- If the worker takes 4 to 5 hours, they are provided with training to
+            //enhance their speed.
+            //- If the worker takes more than 5 hours, they are required to leave the
+            //company.
+            //To calculate the efficiency of a worker, the time taken for the task is
+            //obtained via user input from the keyboard.
+
+            Console.WriteLine("enter the number of hours :");
+            int hours = int.Parse(Console.ReadLine());
+            if (hours >= 2 && hours < 3)
+                Console.WriteLine("high efficient");
+            if (hours >= 4 && hours < 5)
+                Console.WriteLine("enhance your speed");
+            if (hours > 5)
+                Console.WriteLine("you are fired");
+
+
             #endregion
 
 
