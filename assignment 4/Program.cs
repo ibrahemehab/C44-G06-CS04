@@ -163,22 +163,34 @@ namespace assignment_4
             #endregion
             #region q12
             //Write a program to create a Simple Calculator.
-            Console.WriteLine("enter the first number :");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter the second number :");
-            int num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter the operator :");
-            string operators = Console.ReadLine();
-            if (operators == "+")
-                Console.WriteLine("the sum is :" + (num1 + num2) );
-            else if (operators == "-")
-                Console.WriteLine("the substract is :" + (num1 - num2));
-            else if (operators == "*")
-                Console.WriteLine("the multiple is :" + (num1 * num2));
-            else if (operators == "/")
-                Console.WriteLine("the divison is :" + (num1 / num2));
-            else
-                Console.WriteLine($"in valid operator{operators}");
+            //Console.WriteLine("enter the first number :");
+            //int num1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter the second number :");
+            //int num2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter the operator :");
+            //string operators = Console.ReadLine();
+            //if (operators == "+")
+            //    Console.WriteLine("the sum is :" + (num1 + num2) );
+            //else if (operators == "-")
+            //    Console.WriteLine("the substract is :" + (num1 - num2));
+            //else if (operators == "*")
+            //    Console.WriteLine("the multiple is :" + (num1 * num2));
+            //else if (operators == "/")
+            //    Console.WriteLine("the divison is :" + (num1 / num2));
+            //else
+            //    Console.WriteLine($"in valid operator{operators}");
+            #endregion
+            #region q13
+            //Write a program to allow the user to enter a string and print the REVERSE
+            //of it.
+            Console.WriteLine("enter the string");
+            string message = Console.ReadLine();
+            string message3 = "";
+            for (int i = (message.Length - 1); i >= 0; i--)
+            {
+                message3 += message.Substring(i , 1);
+            }
+            Console.WriteLine(message3);
             #endregion
 
 
