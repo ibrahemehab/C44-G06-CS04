@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Reflection.Metadata;
@@ -210,32 +211,48 @@ namespace assignment_4
             #region q15
             //Write a program in C# Sharp to find prime numbers within a range of
             //numbers.
-            Console.WriteLine("enter the start range");
-            int start = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter the end range");
-            int end = int.Parse(Console.ReadLine());
-            for (int i = start; i <= end; i++)
+            //Console.WriteLine("enter the start range");
+            //int start = int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter the end range");
+            //int end = int.Parse(Console.ReadLine());
+            //for (int i = start; i <= end; i++)
+            //{
+            //    bool isprime = true;
+            //    if ( i <= 1)
+            //    {
+            //        isprime = false;
+            //    }
+            //    else
+            //    {
+            //        for (int j = 2; j < i ; j++)
+            //        {
+            //            if (i % j == 0)
+            //            {
+            //                isprime = false;
+            //                break;
+            //            }
+            //        }
+            //    }                  
+            //    if (isprime)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #region q16
+            //Create a program that asks the user to input three points (x1, y1), (x2,
+            //y2), and(x3, y3), and determines whether these points lie on a single
+            //straight line.
+
+            for (int i = 0; i <3; i++)
             {
-                bool isprime = true;
-                if ( i <= 1)
-                {
-                    isprime = false;
-                }
-                else
-                {
-                    for (int j = 2; j < i ; j++)
-                    {
-                        if (i % j == 0)
-                        {
-                            isprime = false;
-                            break;
-                        }
-                    }
-                }                  
-                if (isprime)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine("enter the two points : ");
+                int x = int.Parse(Console.ReadLine());
+                int y = int.Parse(Console.ReadLine());
+
+                //cannot solve it 
+
+
             }
             #endregion
 
