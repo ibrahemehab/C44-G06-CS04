@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using System.Reflection.Metadata;
 using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -113,19 +114,44 @@ namespace assignment_4
             #endregion
             #region q9 
             //Write a program that takes two integers then prints the power.
-            Console.WriteLine("enter the number ");
-            int number = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter the power ");
-            int power = int.Parse(Console.ReadLine());
-            int powercalc = 1 ;
-            for (int i = 1; i <= power; i++)
-            {
-                 powercalc *= number ;
-            }
-            Console.WriteLine(powercalc);
+            //Console.WriteLine("enter the number ");
+            //int number = int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter the power ");
+            //int power = int.Parse(Console.ReadLine());
+            //int powercalc = 1 ;
+            //for (int i = 1; i <= power; i++)
+            //{
+            //     powercalc *= number ;
+            //}
+            //Console.WriteLine(powercalc);
 
 
             #endregion
+            #region q10
+            //Write a program to enter marks of five subjects and calculate 
+            //total,average and percentage.
+            int sum = 0;
+            int count = 0;
+            int total = 0;
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine($"enter number{i} ");
+                int number = int.Parse(Console.ReadLine());
+                sum += number;
+                count++;
+                total += 100;
+            }
+            int average = sum / count;
+            double percentage = ((double)sum / total) * 100;
+            Console.WriteLine($"sum is {sum} ");
+            Console.WriteLine($"average is {average} ");
+            Console.WriteLine($"percentage is {percentage} ");
+            #endregion
+
+
+
+
+
         }
     }
 }
