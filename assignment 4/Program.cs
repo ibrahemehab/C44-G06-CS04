@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Xml.Linq;
@@ -195,20 +196,47 @@ namespace assignment_4
             #region q14
             //Write a program to allow the user to enter int and print the REVERSED of
             //it.
-            Console.WriteLine("enter the number");
-            int number = int.Parse(Console.ReadLine());
-            int result = 0;
-           
-           while ( number > 0)
+            //Console.WriteLine("enter the number");
+            //int number = int.Parse(Console.ReadLine());
+            //int result = 0;
+            //while ( number > 0)
+            //{
+            //    result += (number % 10);
+            //    result *= 10;
+            //    number /= 10;
+            //}
+            //Console.WriteLine(result/10);
+            #endregion
+            #region q15
+            //Write a program in C# Sharp to find prime numbers within a range of
+            //numbers.
+            Console.WriteLine("enter the start range");
+            int start = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the end range");
+            int end = int.Parse(Console.ReadLine());
+            for (int i = start; i <= end; i++)
             {
-                result += (number % 10);
-                result *= 10;
-                number /= 10;
+                bool isprime = true;
+                if ( i <= 1)
+                {
+                    isprime = false;
+                }
+                else
+                {
+                    for (int j = 2; j < i ; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            isprime = false;
+                            break;
+                        }
+                    }
+                }                  
+                if (isprime)
+                {
+                    Console.WriteLine(i);
+                }
             }
-            Console.WriteLine(result/10);
-
-
-
             #endregion
 
 
